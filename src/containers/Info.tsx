@@ -66,38 +66,6 @@ const Wrapper = styled.div`
   }
 `
 
-const Links = styled.div`
-  padding-bottom: ${rem(10)};
-
-  svg path {
-    fill: ${(props) => props.theme.colors.primary};
-    transition: fill ${(props) => props.theme.transition.base};
-  }
-
-  a {
-    color: ${(props) => props.theme.colors.primary};
-    padding: ${rem(10)};
-    white-space: nowrap;
-
-    & + a {
-      margin-left: ${rem(12)};
-    }
-
-    &:hover {
-      color: #de0000;
-
-      svg path {
-        fill: #de0000;
-      }
-    }
-  }
-
-  @media all and (max-width: 767px) {
-    margin-bottom: 24px;
-    padding-bottom: 0;
-  }
-`
-
 const Divider = styled.div`
   border-bottom: 1px solid ${(props) => props.theme.colors.dark};
   width: ${rem(90)};
